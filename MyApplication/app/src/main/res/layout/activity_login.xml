@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".loginActivity"
+    android:weightSum="10">
+  <Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="#111BCF"
+      android:title="Đăng nhập"
+      android:id="@+id/toolbardn"
+      android:titleTextColor="#FFFFFF"
+      tools:ignore="NewApi">
+  </Toolbar>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="6"
+      android:orientation="vertical"
+      android:background="@drawable/nen">
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="50dp"
+      tools:layout_editor_absoluteY="205dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Email"
+        android:textColor="#033F6E"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" android:layout_marginTop="50dp">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="163dp"
+        android:layout_height="47dp"
+      android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text="Mật khẩu"
+        android:textColor="#033F6E"
+        android:textSize="36sp"
+
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/btlogin"
+      style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+      android:layout_width="226dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="25dp"
+      android:layout_marginBottom="444dp"
+      android:text="Đăng Nhập"
+      android:textColor="#420B0B"
+      android:textSize="30sp"
+      android:layout_gravity="center"
+      tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="4"
+      android:background="@drawable/nenlog1">
+
+  </LinearLayout>
+</LinearLayout>
